@@ -6,7 +6,7 @@ model= pipeline('summarization')
 
 
 
-def predict():
+def predict(prompt):
     summary = model(prompt)[0]["summary_text"]
     return summary
 
