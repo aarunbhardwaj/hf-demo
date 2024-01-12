@@ -2,7 +2,7 @@ from transformers import pipeline
 import gradio as gr
 
 
-model= pipeline('summarization')
+model= pipeline("summarization", model="Falconsai/text_summarization")
 
 
 
