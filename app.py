@@ -13,6 +13,6 @@ def predict():
 
 with gr.Blocks() as demo:
     textbox = gr.Textbox(placeholder="Enter text to summarize" , lines = 4)
-    gr.Interface(fn=predict, inputs = textbox , outputs = text)
+    gr.Interface(fn=predict, inputs = textbox , outputs = "text")
 
 demo.launch()
